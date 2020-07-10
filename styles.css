@@ -1,0 +1,166 @@
+@import url("https://rsms.me/inter/inter.css");
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rebeccapurple;
+  color: #071723;
+}
+
+.box {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 10px 22px 34px 0 rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+  overflow: hidden;
+  width: 550px;
+}
+
+header {
+  background: url(images/header.png) center right no-repeat;
+  background-size: cover;
+  height: 187px;
+  padding: 23px 36px;
+  width: 100%; 
+  margin-bottom: 16px;
+}
+
+header h3{
+  color: #fff;
+  font-size: 23px;
+  line-height: 40px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+}
+
+fieldset {
+  padding: 0 32px 32px;
+  border: none;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+form textarea {
+  background: #dde3e9;
+  border: 1px solid #2f3676;
+  border-radius: 8px;
+  color: #071723;
+  height: 140px;
+  padding: 16px;
+  resize: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+input[type= checkbox] + label {
+  display: block;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+}
+input[type= checkbox] {
+  display: none;
+}
+input[type= checkbox] + label:before {
+  content: "\2714";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  margin: 8px 9px;
+  color: transparent;
+  background: #2f3676;
+  border-radius: 4px;
+  padding-left: 6px;
+  
+  transition: 0.2s;
+}
+input[type= checkbox]:checked + label:before {
+  color: #fff;
+}
+input[type= checkbox]:disabled + label:before {
+  background: #C5CFD6;
+}
+
+.counter {
+  display: inline-flex;
+}
+
+.counter svg {
+  fill: #2f3676;
+}
+.counter svg:hover {
+  fill: #191847;
+}
+/* .counter svg:disabled {
+  fill: #C5CFD6;
+} */
+
+.counter input {
+  background: #dde3e9;
+
+  border: 1px solid #2f3676;
+  border-radius: 4px;
+
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+
+  margin: 0 8px;
+
+  width: 60px;
+  height: 42px;
+
+  text-align: center;
+}
+
+footer {
+  padding: 32px;
+  background: #dde3e9;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer button {
+  appearance: none;
+  background: #2f3676;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 8px 32px;
+}
+
+footer button:focus,
+footer button:hover {
+  border: 2px solid #2f3676;
+  background: #191847;
+}
+footer button:disabled {
+  border: 2px solid  #555555;
+  background: #C5CFD6;
+  color: #555555;
+}

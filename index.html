@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+<html>
+	
+<head>
+	<title>Teste Frontend VAGAS.com</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+	<div class="box">
+		<header>
+			<h3>Formulário<br />para compra de<br /><strong>Pacote de Stickers</strong></h3>
+		</header>
+		<form>
+			<fieldset>
+				<h5>Quais stickers:</h5>
+					<input id="react" type="checkbox"/> 
+					<label for="react">React</label>
+					<input id="vue" type="checkbox"/> 
+					<label for="vue">Vue</label>
+					<input id="angular" type="checkbox"/> 
+					<label for="angular">Angular</label>
+			</fieldset>
+			<fieldset>
+				<h5>Quantos stickers de cada?</h5>
+				<div class="counter">
+					<img src="./images/minnus.svg" id="minnus" alt="Minnus Button">
+					<input type="text" placeholder="0" id="counter" value="0" />
+					<img src="./images/plus.svg" id="plus" alt="Plus Button">
+				</div>
+			</fieldset>
+			<fieldset>
+				<h5>Observações:</h5>
+				<textarea name="descricao" placeholder="Alguma dúvida? Recado?"></textarea>
+			</fieldset>
+			<footer>
+				<button>Enviar</button>
+			</footer>
+		</form>
+	</div>
+
+	<script src="index.js"></script>
+</body>
+
+</html>
