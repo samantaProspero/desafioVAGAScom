@@ -26,9 +26,11 @@
 			<fieldset>
 				<h5>Quantos stickers de cada?</h5>
 				<div class="counter">
-					<img src="./images/minnus.svg" id="minnus" alt="Minnus Button" class="disabled">
+					<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" id="minnus" alt="Minnus Button" class="disabled">
+						<path d="M4.667 0A4.668 4.668 0 0 0 0 4.667v32.666A4.668 4.668 0 0 0 4.667 42h32.666A4.668 4.668 0 0 0 42 37.333V4.667A4.668 4.668 0 0 0 37.333 0H4.667zm28 23.333H9.333v-4.666h23.334v4.666z"/></svg> 
 					<input type="text" placeholder="0" id="counter" value="0" />
-					<img src="./images/plus.svg" id="plus" alt="Plus Button">
+					<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" id="plus" alt="Plus Button">
+						<path d="M4.667 42h32.666A4.668 4.668 0 0 0 42 37.333V4.667A4.668 4.668 0 0 0 37.333 0H4.667A4.668 4.668 0 0 0 0 4.667v32.666A4.668 4.668 0 0 0 4.667 42zm4.666-23.333h9.334V9.333h4.666v9.334h9.334v4.666h-9.334v9.334h-4.666v-9.334H9.333v-4.666z" /></svg>
 				</div>
 			</fieldset>
 			<fieldset>
@@ -36,7 +38,7 @@
 				<textarea name="descricao" placeholder="Alguma dúvida? Recado?"></textarea>
 			</fieldset>
 			<footer>
-				<button>Enviar</button>
+				<button id="button">Enviar</button>
 			</footer>
 		</form>
 	</div>

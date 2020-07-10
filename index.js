@@ -1,6 +1,8 @@
 let counter = document.querySelector("#counter");
 let minnus = document.querySelector("#minnus");
 let plus = document.querySelector("#plus");
+let button = document.querySelector("#button");
+
 
 plus.addEventListener('click', function(event){
   minnus.classList.remove('disabled');
@@ -14,4 +16,6 @@ minnus.addEventListener('click', function(event){
     minnus.classList.add('disabled');
   }
 })
+
+
 

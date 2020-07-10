@@ -112,9 +112,9 @@ input[type= checkbox]:disabled + label:before {
 .counter svg:hover {
   fill: #191847;
 }
-/* .counter svg:disabled {
+.counter svg.disabled {
   fill: #C5CFD6;
-} */
+}
 
 .counter input {
   background: #dde3e9;
